@@ -3,10 +3,10 @@ import { Injectable } from '@nestjs/common';
 @Injectable({})
 export class AuthService {
   login() {
-    return { message: 'hello' };
+    return { message: 'chesta' };
   }
 
   signup() {
-    return { message: 'world' };
+    return { message: 'monobol' };
   }
 }
