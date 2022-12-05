@@ -6,6 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "db:dev:rm": "docker rm --force bookmark_nestjs_dev-db_1",
+    "db:dev:up": "docker-compose up -d",
+    "db:dev:restart": "yarn db:dev:rm && yarn db:dev:up",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
